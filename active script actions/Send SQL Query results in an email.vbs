@@ -34,7 +34,7 @@ Dim sADODriver : sADODriver = "{SQL Server}" 'Name of the driver to use for the 
 Dim sdbHost : sdbHost= "localhost" ' Hostname of the database server
 Dim sdbName : sdbName = "WhatsUp"' Name of the database/SID
 Dim sdbUser : sdbUser = "sa" ' Name of the ADO user
-Dim sdbPass : sdbPass = "WhatsUp_Gold" ' Password of the above-named user
+Dim sdbPass : sdbPass = "password-for-user" ' Password of the above-named user
 
 'The sample query looks at the WhatsUp Gold logs to see if there are any credential failures in the past 24 hours
 Dim sSql1 : sSql1 = "select sDisplayName, dDateTime as 'dStartTime', Null as 'dEndTime', sDetails as 'Details', 'Performance' as 'MonitorType' from StatisticalMonitorLog SML " & _
